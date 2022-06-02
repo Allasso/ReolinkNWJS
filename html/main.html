@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>ReolinkNWJS</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <script type="text/javascript" src="../javascript/main.js"></script>
+  <script type="text/javascript" src="../javascript/suncalc.js"></script>
+</head>
+
+<body>
+  <iframe id="reolink_page" src="http://192.168.1.252/" nwfaketop onload="reolinkPageLoaded(event); mssg('ONLOAD ONLOAD ONLOAD')">
+  </iframe>
+
+  <!-- Dialog: Presets/Scheduling management -->
+
+  <div id="dialog_presets_scheduling">
+    <div id="diag_ps_closebutton" onclick="dialogManagePresetsScheduling(true)">close X</div>
+    <div id="diag_ps_container_preset_values">
+      <div id="diag_ps_container_preset_values_day">
+        <input type="number" id="diag_ps_bright_day" class="diag_ps_input" min="0" max="255" value="128"> Brightness Daytime<br>
+        <input type="number" id="diag_ps_contrast_day" class="diag_ps_input" min="0" max="255" value="128"> Contrast Daytime<br>
+        <input type="number" id="diag_ps_saturation_day" class="diag_ps_input" min="0" max="255" value="128"> Saturation Daytime<br>
+        <input type="number" id="diag_ps_sharpness_day" class="diag_ps_input" min="0" max="255" value="128"> Sharpness Daytime<br>
+      </div>
+      <div id="diag_ps_container_preset_values_night">
+        <input type="number" id="diag_ps_bright_night" class="diag_ps_input" min="0" max="255" value="128"> Brightness Night<br>
+        <input type="number" id="diag_ps_contrast_night" class="diag_ps_input" min="0" max="255" value="128"> Contrast Night<br>
+        <input type="number" id="diag_ps_saturation_night" class="diag_ps_input" min="0" max="255" value="128"> Saturation Night<br>
+        <input type="number" id="diag_ps_sharpness_night" class="diag_ps_input" min="0" max="255" value="128"> Sharpness Night<br>
+      </div>
+    </div>
+    <div id="diag_ps_container_scheduling_start_values">
+      <div class="diag_ps_container_subtitle">Begin/end time offsets relative to sunrise/sunset in minutes</div>
+      <div id="diag_ps_container_morning">
+        <input type="number" id="diag_ps_morn_start_offset" class="diag_ps_input" min="-120" max="120" value="0"> Morning Start Offset<br>
+        <input type="number" id="diag_ps_morn_end_offset" class="diag_ps_input" min="-120" max="120" value="30"> Morning End Offset<br>
+      </div>
+      <div id="diag_ps_container_evening">
+        <input type="number" id="diag_ps_eve_start_offset" class="diag_ps_input" min="-120" max="120" value="0"> Evening Start Offset<br>
+        <input type="number" id="diag_ps_eve_end_offset" class="diag_ps_input" min="-120" max="120" value="30"> Evening End Offset<br>
+      </div>
+    </div>
+    <div id="diag_ps_container_scheduling_shift">
+      <div class="diag_ps_container_subtitle">Overcast Shift<br>Begin adjustment earlier/later when overcast</div>
+      <div id="diag_ps_overcast_shift_info">0 minutes</div>
+      <div id="diag_ps_overcast_slider_base">
+        <div id="diag_ps_overcast_slider_range"></div>
+        <div id="diag_ps_overcast_slider_handle"></div>
+      </div>
+    </div>
+    <div id="diag_ps_save_button" onclick="savePresetsScheduling()">Save</div>
+  </div>
+
+  <!-- Dialog: Presets/Scheduling management -->
+
+  <div id="dialog_context_menu_video">
+    <input type="checkbox" id="diag_cmv_res_fluent"> Fluent<br>
+    <input type="checkbox" id="diag_cmv_res_balanced"> Balanced<br>
+    <input type="checkbox" id="diag_cmv_res_clear"> Clear<br>
+  </div>
+</body>
+</html>

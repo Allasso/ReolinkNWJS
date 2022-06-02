@@ -1,0 +1,187 @@
+html, body, div {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: verdana;
+  font-size: 18px;
+  /* background-color: #fef7e7; */
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#reolink_page {
+  box-sizing: border-box;
+  width: 100%;
+  height: calc(100vh - 4px);
+  overflow-y: hidden;
+  border: none;
+}
+
+/* Image Presets/Scheduling dialag styles */
+
+#dialog_presets_scheduling {
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 400px;
+  padding: 50px 20px;
+  background-color: #ddd;
+  font-size: 12px;
+  display: none;
+}
+#dialog_presets_scheduling.displayblock {
+  display: block;
+}
+#diag_ps_closebutton {
+  box-sizing: border-box;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  cursor: pointer;
+}
+#diag_ps_container_preset_values {
+  box-sizing: border-box;
+  position: relative;
+  height: 105px;
+}
+#diag_ps_container_preset_values_day {
+  box-sizing: border-box;
+  position: absolute;
+  right: calc(50% + 10px);
+  top: 0;
+}
+#diag_ps_container_preset_values_night {
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(50% + 10px);
+  top: 0;
+}
+#diag_ps_container_scheduling_start_values {
+  box-sizing: border-box;
+  position: relative;
+  height: 100px;
+}
+#diag_ps_container_morning {
+  box-sizing: border-box;
+  position: absolute;
+  right: calc(50% + 10px);
+  top: 30px;
+}
+#diag_ps_container_evening {
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(50% + 10px);
+  top: 30px;
+}
+#diag_ps_container_scheduling_shift {
+  box-sizing: border-box;
+  position: relative;
+  width: 460px;
+}
+#diag_ps_overcast_shift_info {
+  box-sizing: border-box;
+  position: absolute;
+  left: 55px;
+  top: 50px;
+  width: 85px;
+  text-align: center;
+  cursor: default;
+}
+#diag_ps_overcast_slider_base {
+  box-sizing: border-box;
+  position: absolute;
+  right: 60px;
+  top: 50px;
+  width: 250px;
+  height: 15px;
+  background-color: white;
+}
+#diag_ps_overcast_slider_range {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 15px;
+  background-color: blue;
+}
+#diag_ps_overcast_slider_handle {
+  box-sizing: border-box;
+  position: absolute;
+  left: -11px;
+  top: -2px;
+  width: 22px;
+  height: 19px;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 2px;
+}
+
+.diag_ps_container_subtitle {
+  width: 100%;
+  text-align: center;
+  font-size: 12.5px;
+}
+.diag_ps_input {
+  box-sizing: border-box;
+  width: 50px;
+  padding-left: 5px;
+  font-size: 12px;
+  cursor: default;
+}
+#diag_ps_save_button {
+  box-sizing: border-box;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid gray;
+  background-color: #eee;
+  line-height: 24px;
+  color: #333;
+  cursor: pointer;
+}
+#diag_ps_save_button:hover {
+  background-color: rgb(14, 153, 226);
+}
+#diag_ps_save_button:active {
+  background-color: grey;
+}
+
+/* END Image Presets/Scheduling dialag styles */
+
+/* Video Context Menu styles */
+
+#dialog_context_menu_video {
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0);
+  width: 500px;
+  height: 400px;
+  padding: 50px 20px;
+  background-color: #ddd;
+  font-size: 12px;
+  display: none;
+}
+
+/* END Video Context Menu styles */
+

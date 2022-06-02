@@ -1,0 +1,14 @@
+<!-- Dialog: Video Context Menu -->
+
+<div id="dialog_context_menu_video">
+  <input type="radio" id="diag_cmv_res_fluent" name="radio_group_video_res" data-sel="0"><label for="diag_cmv_res_fluent" data-name="radio_group_video_res"> Fluent</label><br>
+  <input type="radio" id="diag_cmv_res_balanced" name="radio_group_video_res" data-sel="1" checked><label for="diag_cmv_res_balanced" data-name="radio_group_video_res"> Standard</label><br>
+  <input type="radio" id="diag_cmv_res_clear" name="radio_group_video_res" data-sel="2"><label for="diag_cmv_res_clear" data-name="radio_group_video_res"> Clear</label>
+  <div style="height: 10px"></div>
+  <div id="diag_cmv_fullview" onclick="OR_setFullView(); this.parentNode.style.display = 'none'">Full View</div>
+  <div id="diag_cmv_fullview_fullscreen" onclick="OR_setFullView(true); this.parentNode.style.display = 'none'">Full View + Fullscreen</div>
+  <div id="diag_cmv_default_view" onclick="OR_setFullView(); this.parentNode.style.display = 'none'" style="display: none">Default View</div>
+  <div style="height: 10px"></div>
+  <div id="diag_cmv_show_toolbar" onclick="OR_fullviewShowHideHeader({ type: 'mouseenter' }); this.parentNode.style.display = 'none'">Show Toolbar</div>
+  <div id="diag_cmv_quick_settings" onclick="OR_showhideControls(); this.parentNode.style.display = 'none'">Quick Settings</div>
+</div>

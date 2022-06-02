@@ -1,0 +1,23 @@
+{
+  "name": "ReolinkNWJS",
+  "description": "Reolink Client App In NWJS Framework",
+  "version": "0.0.1",
+  "icon": "icons/app.icns",
+  "main": "html/main.html",
+  "chromium-args": "--enable-logging=stderr --enable-spell-checking",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 500,
+    "position": "center"
+  },
+  "nodejs": true,
+  "node-remote": "*://*",
+  "scripts": {
+    "prod": "nwbuild --platforms win64 --buildDir dist/ ./"
+  },
+  "devDependencies": {
+    "nw": "^0.12.0",
+    "nw-builder": "^3.7.1"
+  }
+}

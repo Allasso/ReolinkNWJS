@@ -1,0 +1,180 @@
+.slider_info_box {
+  box-sizing: border-box;
+  position: absolute;
+  left: calc(50% - 12px);
+  top: -20px;
+  width: 25px;
+  height: 15px;
+  color: #000;
+  text-align: center;
+  font-size: 10px;
+}
+.preset_buttons {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  font-size: 13px;
+  border: 1px solid gray;
+  background-color: #eee;
+  line-height: 24px;
+  color: #333;
+}
+.preset_buttons:hover {
+  background-color: rgb(14, 153, 226);
+  color: #fff;
+  cursor: pointer;
+}
+#preset_button_day {
+  right: calc(50% + 5px);
+  top: 194px;
+}
+#preset_button_night {
+  left: calc(50% + 5px);
+  top: 194px;
+}
+#presets_scheduling_button {
+  width: 210px;
+  left: calc(50% - 105px);
+  top: 227px;
+}
+#pv-image-default {
+  display: none;
+}
+.basic_setting_box {
+  height: 100%;
+}
+
+/* Fullview styles */
+
+body.or_fullview_body .Header {
+  box-sizing: border-box !important;
+  height: 2px !important;
+  padding-top: 2px !important;
+  z-index: 99999 !important;
+}
+body.or_fullview_body .Header div {
+  display: none !important;
+}
+body.or_fullview_body .Header.or_fullview_display_header {
+  height: 58px !important;
+  padding-top: 0 !important;
+}
+body.or_fullview_body .Header.or_fullview_display_header div {
+  display: flex !important;
+}
+body.or_fullview_body #main_preview_h5_box.or_fullview_display_toolbar .view-toolbar {
+  position: fixed;
+  left: 0;
+  top: 58px;
+  display: flex !important;
+  z-index: 9999999 !important;
+}
+
+body.or_fullview_body #preRight {
+  z-index: 99 !important;
+}
+#preRight.or_preright_fv_controls {
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+body.or_fullview_body #preview_main_ocx {
+  width: 100% !important;
+}
+body.or_fullview_body #main_preview_h5_box {
+  bottom: 2px !important;
+}
+body.or_fullview_body #main_preview_h5_box > div {
+  top: 2px !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+body.or_fullview_body #preContent {
+  top: 5px !important;
+}
+body.or_fullview_body video {
+  width: calc(100% - 4px) !important;
+}
+body.or_fullview_body #player_bar {
+  display: none;
+  /* Use if we're going to show/hide #player_bar.
+     Will display according to other criteria. */
+  /*
+  position: fixed !important;
+  left: 2px !important;
+  bottom: 2px !important;
+  z-index: 99 !important;
+  */
+}
+body.or_fullview_body .view-toolbar {
+  display: none !important;
+}
+
+/* END Fullview styles */
+
+/* Video Context Menu styles */
+
+#dialog_context_menu_video {
+  box-sizing: border-box;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0);
+  padding: 15px;
+  background-color: #fff;
+  color: #000;
+  font-size: 12px;
+  cursor: default;
+  z-index: 999 !important;
+  display: none;
+}
+#dialog_context_menu_video input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 10px;
+  height: 16px;
+}
+#dialog_context_menu_video input[type=radio]:checked::before {
+  content: "✓";
+}
+
+/* END Video Context Menu styles */
+
+#main_preview_h5_box div {
+  border: none !important;
+}
+
+.Player_Bar .dropdown-select-mod {
+  display: none !important;
+}
+
+#h5-context {
+  display: none !important;
+}
+
+.bc-h5_player.h5_video-fill {
+  object-fit: contain !important;
+}
+
+#diag_cmv_show_toolbar {
+  display: none;
+}
+body.or_fullview_body #diag_cmv_show_toolbar {
+  display: block;
+}
+
+#diag_cmv_quick_settings {
+  display: none;
+}
+body.or_fullview_body #diag_cmv_quick_settings {
+  display: block;
+}
+
+video {
+  /* background-color: cyan; */
+}
+
+/* END Video Context Menu styles */
